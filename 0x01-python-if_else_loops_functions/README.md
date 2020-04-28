@@ -1,6 +1,6 @@
 ## 0x01. Python - if/else, loops, functions
 
-General
+# General
 * Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
 * Why indentation is so important in Python
 * How to use the if, if ... else statements
@@ -112,6 +112,7 @@ Write a function that checks for lowercase character.
 * You are not allowed to import any module
 * You are not allowed to use str.upper() and str.isupper()
 * Tips: ord()
+
 You don’t need to understand __import__
 
 ## 8. To uppercase mandatory
@@ -123,6 +124,7 @@ Write a function that prints a string in uppercase followed by a new line.
 * You are not allowed to import any module
 * You are not allowed to use str.upper() and str.isupper()
 * Tips: ord()
+
 You don’t need to understand __import__
 
 ## 9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important mandatory
@@ -131,6 +133,7 @@ Write a function that prints the last digit of a number.
 * Prototype: def print_last_digit(number):
 * Returns the value of the last digit
 * You are not allowed to import any module
+
 You don’t need to understand __import__
 
 ## 10. a + b mandatory
@@ -139,6 +142,7 @@ Write a function that adds two integers and returns the result.
 * Prototype: def add(a, b):
 * Returns the value of a + b
 * You are not allowed to import any module
+
 You don’t need to understand __import__
 
 ## 11. a ^ b mandatory
@@ -147,6 +151,7 @@ Write a function that computes a to the power of b and return the value.
 * Prototype: def pow(a, b):
 * Returns the value of a ^ b
 * You are not allowed to import any module
+
 You don’t need to understand __import__
 
 ## 12. Fizz Buzz mandatory
@@ -157,6 +162,7 @@ Write a function that prints the numbers from 1 to 100 separated by a space.
 * Prototype: def fizzbuzz():
 * Each element should be followed by a space
 * You are not allowed to import any module
+
 You don’t need to understand __import__
 
 ## 13. Insert in sorted linked list mandatory
@@ -164,6 +170,7 @@ Technical interview preparation:
 
 * You are not allowed to google anything
 * Whiteboard first
+
 Write a function in C that inserts a number into a sorted singly linked list.
 
 * Prototype: listint_t *insert_node(listint_t **head, int number);
@@ -182,6 +189,7 @@ Write a function that creates a copy of the string, removing the character at th
 
 * Prototype: def remove_char_at(str, n):
 * You are not allowed to import any module
+
 You don’t need to understand __import__
 
 ## 16. ByteCode -> Python #2 #advanced
