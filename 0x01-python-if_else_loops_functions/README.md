@@ -1,6 +1,6 @@
-## 0x01. Python - if/else, loops, functions
+# 0x01. Python - if/else, loops, functions
 
-# General
+## General
 * Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
 * Why indentation is so important in Python
 * How to use the if, if ... else statements
