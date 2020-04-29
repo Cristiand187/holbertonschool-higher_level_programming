@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def fizzbuzz():
 
     num = 1
-    
+
     while (num <= 100):
         str = ""
         if (num % 5 is 0 and num % 3 is 0):
