@@ -10,7 +10,7 @@
 
 int is_palindrome(listint_t **head)
 {
-	listint_t *current, *ini, *end;
+	listint_t *current, *end;
 	unsigned int n_nodes = 0, i = 0, index = 0;
 
 	if (*head == NULL || head == NULL)
@@ -28,24 +28,19 @@ int is_palindrome(listint_t **head)
 		return (0);
 
 	current = *head;
+    index = 0;
 	for (i = 0; i < n_nodes / 2; i++)
 	{
-		index = 0;
-		ini = *head;
-		while (i != index)
-		{
-			ini = ini->next;
-			index += 1;
-		}
-		index = 0, end = *head;
+		index = i; 
+        end = current;
 		while (index != (n_nodes - 1) - i)
 		{
 			end = end->next;
 			index += 1;
 		}
-		if (ini->n != end->n)
+		if (current->n != end->n)
 			return  (0);
-
+        current = current->next;
 	}
 
 	return (1);
