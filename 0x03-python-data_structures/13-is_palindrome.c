@@ -13,10 +13,8 @@ int is_palindrome(listint_t **head)
 	listint_t *current, *end;
 	unsigned int n_nodes = 0, i = 0, index = 0;
 
-	if (*head == NULL || head == NULL)
+	if (*head == NULL || head == NULL || (*head)->next == NULL)
 		return (0);
-
-	current = *head;
 
 	while (current != NULL)
 	{
