@@ -28,7 +28,7 @@ class Square:
     def area(self):
         """this area function
 
-        Attributes:
-            self (:obj:`list`): Description of `param3`
+        return:
+            area (int): This area of square
         """
-        return 4 * self.__size
+        return (self.__size ** 2)
