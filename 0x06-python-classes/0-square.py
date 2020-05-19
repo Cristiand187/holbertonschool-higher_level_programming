@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Defines a class Square """
+
+
 class Square:
     """The summary line for a class docstring should fit on one line.
 
