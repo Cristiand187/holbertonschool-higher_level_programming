@@ -1,38 +1,21 @@
 #!/usr/bin/python3
+""" class Square """
+
+
 class Square:
-    """The summary line for a class docstring should fit on one line.
-
-    If the class has public attributes, they may be documented here
-    in an ``Attributes`` section and follow the same formatting as a
-    function's ``Args`` section. Alternatively, attributes may be documented
-    inline with the attribute's declaration (see __init__ method below).
-
-    Properties created with the ``@property`` decorator should be documented
-    in the property's getter method.
+    """empty class Square that defines a square
 
     Attributes:
-        attr1 (str): Description of `attr1`.
-        attr2 (:obj:`int`, optional): Description of `attr2`.
+        size (str): Description of size square.
 
     """
 
     def __init__(self, size=0):
-        """Example of docstring on the __init__ method.
+        """empty class Square that defines a square
 
-        The __init__ method may be documented in either the class level
-        docstring, or as a docstring on the __init__ method itself.
-
-        Either form is acceptable, but the two should not be mixed. Choose one
-        convention to document the __init__ method and be consistent with it.
-
-        Note:
-            Do not include the `self` parameter in the ``Args`` section.
-
-        Args:
-            param1 (str): Description of `param1`.
-            param2 (:obj:`int`, optional): Description of `param2`. Multiple
-                lines are supported.
-            param3 (:obj:`list` of :obj:`str`): Description of `param3`.
+        Attributes:
+            self (:obj:`list`): Description of `param3`
+            size (str): Description of size square.
 
         """
         if (type(size) != int):
@@ -44,10 +27,21 @@ class Square:
 
     @property
     def size(self):
+        """getter
+
+        Returns:
+            The size of the square
+        """
         return self.__size
 
     @size.setter
     def size(self, val):
+        """setter
+        Args:
+            val (int): The size of the square
+        Returns:
+            None
+        """
         if (type(val) != int):
             raise ValueError("size must be an integer")
         elif (val < 0):
@@ -56,44 +50,18 @@ class Square:
             self.__size = val
 
     def area(self):
-        """Example of docstring on the __init__ method.
+        """this area function
 
-        The __init__ method may be documented in either the class level
-        docstring, or as a docstring on the __init__ method itself.
-
-        Either form is acceptable, but the two should not be mixed. Choose one
-        convention to document the __init__ method and be consistent with it.
-
-        Note:
-            Do not include the `self` parameter in the ``Args`` section.
-
-        Args:
-            param1 (str): Description of `param1`.
-            param2 (:obj:`int`, optional): Description of `param2`. Multiple
-                lines are supported.
-            param3 (:obj:`list` of :obj:`str`): Description of `param3`.
-
+        return:
+            area (int): This area of square
         """
-        return 4 * self.__size
+        return (self.__size ** 2)
 
     def my_print(self):
-        """Example of docstring on the __init__ method.
+        """this my_print function
 
-        The __init__ method may be documented in either the class level
-        docstring, or as a docstring on the __init__ method itself.
-
-        Either form is acceptable, but the two should not be mixed. Choose one
-        convention to document the __init__ method and be consistent with it.
-
-        Note:
-            Do not include the `self` parameter in the ``Args`` section.
-
-        Args:
-            param1 (str): Description of `param1`.
-            param2 (:obj:`int`, optional): Description of `param2`. Multiple
-                lines are supported.
-            param3 (:obj:`list` of :obj:`str`): Description of `param3`.
-
+        return:
+            None
         """
         n = 1 if self.__size == 0 else self.__size
 
