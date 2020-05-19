@@ -27,12 +27,21 @@ class Square:
 
     @property
     def size(self):
-        """int: Properties should be documented in their getter method."""
+        """getter
+        
+        Returns:
+            The size of the square
+        """
         return self.__size
 
     @size.setter
     def size(self, val):
-        """val: Properties should be documented in their getter method."""
+        """setter
+        Args:
+            val (int): The size of the square
+        Returns:
+            None
+        """
         if (type(val) != int):
             raise ValueError("size must be an integer")
         elif (val < 0):
@@ -46,4 +55,4 @@ class Square:
         return:
             area (int): This area of square
         """
-        return 4 * self.__size
+        return (self.__size ** 2)
