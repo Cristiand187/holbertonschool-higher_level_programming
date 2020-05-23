@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import numpy as np
 """
     Funtion mul two matrix
 """
