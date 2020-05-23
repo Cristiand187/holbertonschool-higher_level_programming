@@ -1,7 +1,7 @@
 # 0x07. Python - Test-driven development
 
 
-![Test](https://raw.githubusercontent.com/cristiand187/holbertonschool-higher_level_programming/master/s0x07-python-test_driven_development/giphy-4.gif))
+![Test](https://raw.githubusercontent.com/cristiand187/holbertonschool-higher_level_programming/master/0x07-python-test_driven_development/giphy-4.gif)
 
 ## :books: Resources
 Read or watch:
