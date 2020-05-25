@@ -12,8 +12,8 @@ class Rectangle:
             width {int} -- [description] (default: {0})
             height {int} -- [description] (default: {0})
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     def __str__(self):
 
@@ -61,7 +61,7 @@ class Rectangle:
     def height(self, valor):
 
         if (type(valor) != int):
-            raise ValueError("height must be an integer")
+            raise TypeError("height must be an integer")
         elif (valor < 0):
             raise ValueError("height must be >= 0")
         else:
