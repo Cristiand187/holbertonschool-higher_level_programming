@@ -29,7 +29,9 @@ class Rectangle:
         return R_str
 
     def __repr__(self):
-        return "Rectangle(" + str(self.__height) + ", " + str(self.__width) + ")"
+
+        s = "Rectangle(" + str(self.__height) + ", " + str(self.__width) + ")"
+        return s
 
     @property
     def width(self):
@@ -68,11 +70,19 @@ class Rectangle:
             self.__height = valor
 
     def area(self):
+        """[summary]
 
+        Returns:
+            [type] -- [description]
+        """
         return self.__height * self.__width
 
     def perimeter(self):
+        """[summary]
 
+        Returns:
+            [type] -- [description]
+        """
         if self.__width is 0 or self.__height is 0:
             return 0
         return (2 * self.__height) + (2 * self.__width)
