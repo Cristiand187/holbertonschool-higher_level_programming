@@ -3,9 +3,15 @@
 
 
 class Rectangle:
+    """ class Rectangle that defines a rectangle """
 
     def __init__(self, width=0, height=0):
+        """[summary]
 
+        Keyword Arguments:
+            width {int} -- [description] (default: {0})
+            height {int} -- [description] (default: {0})
+        """
         self.__width = width
         self.__height = height
 
