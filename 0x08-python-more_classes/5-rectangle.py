@@ -34,6 +34,7 @@ class Rectangle:
         return s
 
     def __del__(self):
+
         print("Bye rectangle...")
 
     @property
