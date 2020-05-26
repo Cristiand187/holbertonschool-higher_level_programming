@@ -30,7 +30,7 @@ class Rectangle:
 
     def __repr__(self):
 
-        s = "Rectangle(" + str(self.__height) + ", " + str(self.__width) + ")"
+        s = "Rectangle({:d}, {:d})".format(self.__width, self.__height)
         return s
 
     @property
