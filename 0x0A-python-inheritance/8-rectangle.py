@@ -40,7 +40,13 @@ class Rectangle(BaseGeometry):
     Write a class Rectangle that inherits from BaseGeometry
     """
     def __init__(self, width, height):
+        """[summary]
+
+        Arguments:
+            width {[type]} -- [description]
+            height {[type]} -- [description]
+        """
         super().integer_validator("width", width)
-        self._Rectangle__width = width
         super().integer_validator("height", height)
+        self._Rectangle__width = width
         self._Rectangle__height = height
