@@ -66,7 +66,9 @@ class Rectangle(BaseGeometry):
             [type] -- [description]
         """
         return "[{}] {}/{}".format(
-                str(self.__class__.__name__), str(self._Rectangle__width), str(self._Rectangle__height))
+                str(self.__class__.__name__),
+                str(self._Rectangle__width),
+                str(self._Rectangle__height))
 
 
 class Square(Rectangle):
