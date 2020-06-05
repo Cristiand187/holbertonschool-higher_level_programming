@@ -38,4 +38,4 @@ class Student():
             json ([type]): [description]
         """
         for elem in json.keys():
-            self.__dict__[items] = json[elem]
+            self.__dict__[elem] = json[elem]
