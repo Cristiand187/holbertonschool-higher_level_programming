@@ -11,14 +11,14 @@ class TestMaxInteger(unittest.TestCase):
     Arguments:
         unittest {[type]} -- [description]
     """
-    def max_integer_in_list_of_integers(self):
+    def test_return_max_integer_in_list_of_integers(self):
         """
         Test that function returns the max integer
         """
         max_num = max_integer([1, 5, 2, 3])
         self.assertEqual(max_num, 5)
 
-    def max_integer_in_list_with_floats(self):
+    def test_return_max_integer_in_list_with_floats(self):
         """
         Test that function returns max integer with floats in the list
         """
@@ -29,7 +29,7 @@ class TestMaxInteger(unittest.TestCase):
         max_num = max_integer([1, 4, 5.1234, 5])
         self.assertEqual(max_num, 5.1234)
 
-    def list_with_one_element(self):
+    def test_for_list_with_one_element(self):
         """
         Test that function returns the number of a list of length 1
         """
@@ -42,7 +42,7 @@ class TestMaxInteger(unittest.TestCase):
         with self.assertRaises(KeyError):
             max_integer({'a': 5})
 
-    def negative_numbers_are_numbers_too(self):
+    def test_negative_numbers_are_numbers_too(self):
         """
         Tests that function return max integer with negative numbers
         """
@@ -53,7 +53,7 @@ class TestMaxInteger(unittest.TestCase):
         max_num = max_integer([-30, -0.45])
         self.assertEqual(max_num, -0.45)
 
-    def list_with_non_number_types_raise_exception(self):
+    def test_list_with_non_number_types_raise_exception(self):
         """
         Tests that the function raises a TypeError if elements are not numbers
         """
@@ -64,21 +64,21 @@ class TestMaxInteger(unittest.TestCase):
         with self.assertRaises(TypeError):
             max_integer([1, {1: 400, 2: 450}, 23])
 
-    def no_parameter_returns_none(self):
+    def test_no_parameter_returns_none(self):
         """
         Test that None is returned if no argument is given
         """
         max_num = max_integer()
         self.assertEqual(max_num, None)
 
-    def empty_list_returns_none(self):
+    def test_empty_list_returns_none(self):
         """
         Test that function returns None if list is empty
         """
         max_num = max_integer([])
         self.assertEqual(max_num, None)
 
-    def all_elements_of_equal_value(self):
+    def test_all_elements_of_equal_value(self):
         """
         Test that max integer is returns for list of all equal elements
         """
