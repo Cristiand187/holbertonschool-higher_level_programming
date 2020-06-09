@@ -12,6 +12,8 @@ class test_BaseClass(unittest.TestCase):
     """
 
     def test_standard(self):
+        """[summary]
+        """
         b1 = Base(12)
         b2 = Base(-12)
         b3 = Base()

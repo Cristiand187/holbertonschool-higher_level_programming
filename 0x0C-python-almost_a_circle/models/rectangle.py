@@ -10,7 +10,15 @@ class Rectangle(Base):
         Base ([class]): class Base
     """
     def __init__(self, width, height, x=0, y=0, id=None):
+        """[summary]
 
+        Args:
+            width ([type]): [description]
+            height ([type]): [description]
+            x (int, optional): [description]. Defaults to 0.
+            y (int, optional): [description]. Defaults to 0.
+            id ([type], optional): [description]. Defaults to None.
+        """
         super().__init__(id)
 
         Base.integer_validator(self, "width", width)
@@ -37,6 +45,11 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
+        """[summary]
+
+        Args:
+            value ([type]): [description]
+        """
         Base.integer_validator(self, "width", value)
         Base.greater_validator(self, "width", value)
 
@@ -52,6 +65,11 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        """[summary]
+
+        Args:
+            value ([type]): [description]
+        """
         Base.integer_validator(self, "height", value)
         Base.greater_validator(self, "height", value)
 
@@ -67,6 +85,11 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+        """[summary]
+
+        Args:
+            value ([type]): [description]
+        """
         Base.integer_validator(self, "x", value)
         Base.greater_iqual_validator(self, "x", value)
 
@@ -74,20 +97,35 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """[summary]
 
+        Returns:
+            [type]: [description]
+        """
         return self.__y
 
     @y.setter
     def y(self, value):
+        """[summary]
+
+        Args:
+            value ([type]): [description]
+        """
         Base.integer_validator(self, "y", value)
         Base.greater_iqual_validator(self, "y", value)
-
         self.__y = value
 
     def area(self):
+        """[summary]
+
+        Returns:
+            [type]: [description]
+        """
         return self.__height * self.__width
 
     def display(self):
+        """[summary]
+        """
         print('\n' * self.__y, end="")
         for i in range(0, self.__height):
             print(' ' * self.__x, end="")
@@ -96,6 +134,11 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        """[summary]
+
+        Returns:
+            [type]: [description]
+        """
         str_self = "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
                                                     self.id, self.__x,
                                                     self.__y, self.__width,
@@ -103,6 +146,8 @@ class Rectangle(Base):
         return str_self
 
     def update(self, *args, **kwargs):
+        """[summary]
+        """
         n_arg = len(args)
         list_attr = ["id", "width", "height", "x", "y"]
         if args is None or n_arg == 0:
@@ -112,6 +157,11 @@ class Rectangle(Base):
             setattr(self, list_attr[x], arg)
 
     def to_dictionary(self):
+        """[summary]
+
+        Returns:
+            [type]: [description]
+        """
         return {
             'id': self.id,
             'width': self.__width,

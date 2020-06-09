@@ -11,6 +11,8 @@ class test_RectangleClass(unittest.TestCase):
     """base test class"""
 
     def test_standard(self):
+        """[summary]
+        """
         s1 = Square(5)
         self.assertEqual(s1.size, 5)
         s1.size = 10

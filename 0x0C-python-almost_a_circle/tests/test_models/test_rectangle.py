@@ -10,6 +10,8 @@ class test_RectangleClass(unittest.TestCase):
     """test class rectangle"""
 
     def test_standard(self):
+        """[summary]
+        """
         r1 = Rectangle(10, 2)
         self.assertEqual(r1.width, 10)
         r2 = Rectangle(2, 10)
