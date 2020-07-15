@@ -1,6 +1,6 @@
 -- creates the database hbtn_0d_usa and the table cities
 -- cities join states
-USE IF EXISTS hbtn_0d_usa;
+CREATE DATABASE IF EXISTS hbtn_0d_usa;
 
 CREATE TABLE IF NOT EXISTS cities(
     id INT PRIMARY KEY,
