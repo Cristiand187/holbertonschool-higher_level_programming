@@ -12,6 +12,7 @@ if __name__ == '__main__':
     password = argv[2]
     database = argv[3]
     state_name = argv[4]
+    cities = ""
 
     db = MySQLdb.connect(host="localhost", port=3306, user=user,
                          passwd=password, db=database)
@@ -22,6 +23,10 @@ if __name__ == '__main__':
                  WHERE s.name = %s ORDER BY c.id ASC", (state_name, ))
     rows = cur.fetchall()
     for row in rows:
-        print(row)
+        if rows[len(rows) - 1] != row:
+            cities += row[1] + ", "
+        else:
+            cities += row[1]
+    print(cities)
     cur.close()
     db.close()
