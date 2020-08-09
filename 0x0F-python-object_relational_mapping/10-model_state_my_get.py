@@ -20,7 +20,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    state = session.query(State).filter(State.name == name).first()
+    state = session.query(State).filter(State.name == state_name).first()
     if not state:
         print("Not found")
     else:
