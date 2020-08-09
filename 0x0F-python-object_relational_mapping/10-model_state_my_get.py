@@ -8,10 +8,10 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
 
-    user = argv[1]
-    password = argv[2]
-    database = argv[3]
-    state_name = argv[4]
+    user = sys.argv[1]
+    password = sys.argv[2]
+    database = sys.argv[3]
+    state_name = sys.argv[4]
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                            .format(user, password, database),
