@@ -21,6 +21,7 @@ if __name__ == '__main__':
                 .format(name_arg))
     rows = cur.fetchall()
     for row in rows:
-        print(row)
+        if row[1] == name_arg:
+            print(row)
     cur.close()
     db.close()
