@@ -3,7 +3,7 @@
 """
 import sys
 from model_state import Base, State
-from sqlalchemy import (create_engine)
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
@@ -23,5 +23,5 @@ if __name__ == "__main__":
     session.add(new_state)
     session.commit()
 
-    print("{}".format(louisiana.id))
+    print("{}".format(new_state.id))
     session.close()
