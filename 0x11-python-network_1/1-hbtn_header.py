@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """sends a request to the URL and displays the value of the X-Request-Id"""
-from urllib.request import Request, urlopen
+import urllib.request
 from sys import argv
 
 
