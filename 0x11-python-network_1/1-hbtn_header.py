@@ -7,4 +7,4 @@ from sys import argv
 url = argv[1]
 req = Request(url)
 with urlopen(req) as response:
-    print(response.headers._headers[11][1])
+    print(f.headers.get('X-Request-Id'))
