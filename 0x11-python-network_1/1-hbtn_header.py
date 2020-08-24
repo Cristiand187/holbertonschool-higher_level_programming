@@ -5,6 +5,6 @@ from sys import argv
 
 
 url = argv[1]
-req = Request(url)
-with urlopen(req) as response:
-    print(f.headers.get('X-Request-Id'))
+req = urllib.request.Request(url)
+with urllib.request.urlopen(req) as response:
+    print(response.headers.get('X-Request-Id'))
