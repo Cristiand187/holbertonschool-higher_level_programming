@@ -17,7 +17,7 @@ if __name__ == "__main__":
         json_obj = response.json()
         i = 0
         for res in json_obj:
-            if i > 10:
+            if i >= 10:
                 break
             print(res.get('sha') + ': ', end="")
             print(res.get('commit').get('author').get('name'))
