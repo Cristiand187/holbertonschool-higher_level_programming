@@ -5,15 +5,16 @@ module.exports = class Rectangle {
     if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
-      this.print = function () {
-        for (let i = 0; i < h; i++) {
-          let cadena = '';
-          for (let j = 0; j < w; j++) {
-            cadena += 'X';
-          }
-          console.log(cadena);
-        }
-      };
+    }
+  }
+
+  print () {
+    for (let i = 0; i < this.height; i++) {
+      let cadena = '';
+      for (let j = 0; j < this.width; j++) {
+        cadena += 'X';
+      }
+      console.log(cadena);
     }
   }
 };
